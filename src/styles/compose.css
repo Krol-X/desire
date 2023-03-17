@@ -1,0 +1,54 @@
+/* fillings */
+.fillMaxWidth { width: 100%; }
+.fillMaxHeight { height: 100%; }
+.fillMaxSize { width: 100%; height: 100%; }
+
+/* Box */
+.box {
+  position: absolute;
+}
+.box > * {
+  position: absolute;
+  left: 0; right: 0;
+  top: 0; bottom: 0;
+  margin: auto;
+}
+.left { margin-left: 0; margin-right: auto; }
+.right { margin-left: auto; margin-right: 0; }
+.top { margin-top: 0; margin-bottom: auto; }
+.bottom { margin-top: auto; margin-bottom: 0; }
+.center { margin: auto; }
+.center-horizontal { margin-left: auto; margin-right: auto; }
+.center-vertical { margin-top: auto; margin-bottom: auto; }
+
+/* Rows and Columns */
+.row { flex-direction: row; }
+.row-reverse { flex-direction: row-reverse; }
+.column { flex-direction: column; }
+.column-reverse { flex-direction: column-reverse; }
+.grow-25 { flex-grow: 0.25; }
+.grow-05 { flex-grow: 0.5; }
+.grow-75 { flex-grow: 0.75; }
+.grow-30 { flex-grow: 0.30; }
+.grow-60 { flex-grow: 0.60; }
+.grow-1 { flex-grow: 1; }
+.grow-2 { flex-grow: 2; }
+
+.row, .row-reverse, .column, .column-reverse {
+  /* position: absolute; */
+  display: flex;
+}
+
+.c-left { justify-content: start; }
+.c-right { justify-content: end; }
+.c-top { align-items: start; }
+.c-bottom { align-items: end; }
+.c-hcenter { display: flex; justify-content: center; }
+.c-vcenter { display: flex; align-items: center; }
+.c-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* todo: add Cards */
